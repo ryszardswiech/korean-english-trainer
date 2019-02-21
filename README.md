@@ -6,16 +6,16 @@ STEPS I NEED TO ACCOMPLISH PROJECT:
 
 I.) HTML Structure 
 
-INPUT Section:
+	INPUT Section:
 	- two input fields, one for Korean, and one for English
 	- button to submit both words
 
-OUTPUT Section: 
+	OUTPUT Section: 
 	- two fields, one for showing Korean, one for English words
 	- button to show new word
 	- button to stwitch which language is user guessing at the moment
  
-II,) CSS Structure
+II.) CSS Structure
 
 	- flags of both Countries
 	- nice Korea-related background image
@@ -27,3 +27,9 @@ III.) JavaScript Structure
 	Stage 2.) RANDOMIZE - when user want's to train we must randomize words
 
 	Stage 3.) OUTPUT - show user one words from a pair
+
+
+RESOURCES:
+
+	Flags: both flags downloaded from countryflags.com
+	Background pictures downloaded from Pixabay.com	
