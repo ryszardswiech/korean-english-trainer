@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Korean-English Trainer</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <section class="input">
+            <h1 class="title">Input words:</h1>
+            <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
+            <input type="text" placeholder="korean word" class="word">
+            <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
+            <input type="text" placeholder="english word" class="word">
+            <button class="btn" id="submit">submit</button>
+        </section>
+        <section class="output">
+            <h1 class="title">Draw a word:</h1>
+            <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
+            <div class="question">
+                <p>korean word</p>
+            </div>
+            <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
+            <input type="text" placeholder="type answer" class="word">
+            <button class="btn" id="check">check</button>
+            <button class="btn" id="draw">draw</button>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 

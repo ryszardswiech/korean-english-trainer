@@ -1,0 +1,40 @@
+/* font-family: 'Comfortaa', cursive; */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Comfortaa', cursive;
+  font-size: 10px;
+  min-height: 100vh;
+  background: url(/img/korea1280-0.jpg) no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 90vh;
+  margin: 5vh 5%;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.input {
+  flex-basis: 45vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.flag img {
+  width: 7rem;
+}
