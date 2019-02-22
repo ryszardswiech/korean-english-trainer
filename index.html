@@ -12,24 +12,40 @@
 
 <body>
     <div class="wrapper">
-        <section class="input">
+        <section class="section-input">
             <h1 class="title">Input words:</h1>
-            <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
-            <input type="text" placeholder="korean word" class="word">
-            <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
-            <input type="text" placeholder="english word" class="word">
+            <div class="language lang-0">
+                <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
+                <div class="word-wrap">
+                    <input type="text" placeholder="korean word" class="user-input">
+                </div>
+            </div>
+            <div class="language lang-1">
+                <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
+                <div class="word-wrap">
+                    <input type="text" placeholder="english word" class="user-input">
+                </div>
+            </div>
             <button class="btn" id="submit">submit</button>
         </section>
-        <section class="output">
+        <section class="section-output">
             <h1 class="title">Draw a word:</h1>
-            <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
-            <div class="question">
-                <p>korean word</p>
+            <div class="language lang-0">
+                <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
+                <div class="question">
+                    <p class="drawed-text">korean word</p>
+                </div>
             </div>
-            <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
-            <input type="text" placeholder="type answer" class="word">
-            <button class="btn" id="check">check</button>
-            <button class="btn" id="draw">draw</button>
+            <div class="language lang-1">
+                <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
+                <div class="word-wrap">
+                    <input type="text" placeholder="type answer" class="user-input">
+                </div>
+            </div>
+            <section class="buttons">
+                <button class="btn" id="check">check</button>
+                <button class="btn" id="draw">draw</button>
+            </section>
         </section>
     </div>
     <script src="script.js"></script>
