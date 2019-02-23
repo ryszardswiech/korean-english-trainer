@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 1280px;
   min-height: 90vh;
   margin: 5vh 5%;
   background: rgba(255, 255, 255, 0.85);
@@ -111,4 +112,100 @@
 .buttons {
   display: flex;
   justify-content: space-around;
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .user-input {
+    font-size: 3.5rem;
+  }
+
+  .drawed-text {
+    font-size: 4rem;
+  }
+
+  .btn {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .title {
+    font-size: 8rem;
+  }
+
+  .user-input {
+    font-size: 5rem;
+  }
+
+  .drawed-text {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 5.5rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .wrapper {
+    flex-direction: row;
+    margin: 5vh auto;
+    padding: 1%;
+    display: flex;
+    max-width: 1280px;
+  }
+}
+
+.section-input,
+.section-output {
+  flex-basis: 45%;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.language {
+  margin: 2vh 0;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .user-input {
+    font-size: 3rem;
+  }
+
+  .drawed-text {
+    font-size: 4rem;
+  }
+
+  .btn {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .user-input {
+    font-size: 4rem;
+  }
+
+  .drawed-text {
+    font-size: 5rem;
+  }
+
+  .btn {
+    font-size: 5rem;
+  }
 }
