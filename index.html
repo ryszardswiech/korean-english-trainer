@@ -24,6 +24,7 @@
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&amp;subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,13 +35,13 @@
             <div class="language lang-0">
                 <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
                 <div class="word-wrap">
-                    <input type="text" placeholder="korean word" class="user-input">
+                    <input type="text" placeholder="korean word" class="user-input" id="input-language0" lang="ko">
                 </div>
             </div>
             <div class="language lang-1">
                 <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
                 <div class="word-wrap">
-                    <input type="text" placeholder="english word" class="user-input">
+                    <input type="text" placeholder="english word" class="user-input" id="input-language1">
                 </div>
             </div>
             <button class="btn" id="submit">submit</button>
@@ -50,21 +51,23 @@
             <div class="language lang-0">
                 <picture class="flag"><img src="/img/korean-flag-xs.png" alt="Flag of the South Korea"></picture>
                 <div class="question">
-                    <p class="drawed-text">korean word</p>
+                    <p id="drawed-text">korean word</p>
                 </div>
             </div>
             <div class="language lang-1">
                 <picture class="flag"><img src="/img/uk-flag-xs.png" alt="Flag of the United Kingdom"></picture>
                 <div class="word-wrap">
-                    <input type="text" placeholder="type answer" class="user-input">
+                    <input type="text" placeholder="type answer" class="user-input" id="answer">
                 </div>
             </div>
             <section class="buttons">
-                <button class="btn" id="check">check</button>
                 <button class="btn" id="draw">draw</button>
+                <button class="btn" id="check">check</button>
             </section>
         </section>
+        <p class="version">Korean-English Trainer Version: 1.0</p>
     </div>
+
     <script src="script.js"></script>
 </body>
 

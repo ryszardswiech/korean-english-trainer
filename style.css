@@ -1,4 +1,5 @@
 /* font-family: 'Comfortaa', cursive; */
+/* font-family: 'Noto Sans KR', sans-serif; */
 
 *,
 *::before,
@@ -12,9 +13,8 @@
   font-family: 'Comfortaa', cursive;
   font-size: 10px;
   min-height: 100vh;
-  background: url(/img/korea1280-0.jpg) no-repeat;
-  background-position: bottom left;
   background-size: cover;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -27,6 +27,7 @@
   background: rgba(255, 255, 255, 0.85);
   padding: 3%;
   justify-content: space-around;
+  position: relative;
 }
 
 .section-input,
@@ -83,6 +84,10 @@
   outline: none;
 }
 
+/* #input-language0 {
+  font-family: 'Noto Sans KR', sans-serif;
+} */
+
 .question {
   display: flex;
 }
@@ -112,6 +117,14 @@
 .buttons {
   display: flex;
   justify-content: space-around;
+}
+
+.version {
+  position: absolute;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  bottom: 5px;
 }
 
 @media (min-width: 700px) and (orientation: portrait) {
@@ -151,12 +164,16 @@
 }
 
 @media (orientation: landscape) {
+
+
   .wrapper {
     flex-direction: row;
     margin: 5vh auto;
-    padding: 1%;
+    padding: 3%;
     display: flex;
     max-width: 1280px;
+    width: 90%;
+    min-height: 90vh;
   }
 }
 
