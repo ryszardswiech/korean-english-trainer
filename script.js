@@ -88,8 +88,8 @@ CHECK_BUTTON.addEventListener('click', function () {
   document.getElementById('answer').value = '';
 
   if (wordsArray[drawedNumber][1] === answer) {
-    console.log('Odpowiedź poprawna');
+    document.getElementById('drawed-text').textContent = 'Odpowiedź prawidłowa';
   } else {
-    console.log('Odpowiedź błędna');
+    document.getElementById('drawed-text').textContent = 'Odpowiedź błędna';
   }
 })
